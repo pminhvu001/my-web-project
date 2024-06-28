@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anh Yêu Em</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+            margin: 0;
+        }
+        #message {
+            display: none;
+            font-size: 2em;
+            color: red;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <button id="showMessageBtn">Nhấp vào đây</button>
+    <div id="message">Anh Yêu Em</div>
+    <script>
+        document.getElementById('showMessageBtn').addEventListener('click', function() {
+            var message = document.getElementById('message');
+            message.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
